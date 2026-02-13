@@ -12,21 +12,8 @@ public class BasicExample {
         CodeDetectorAPIClient client = new CodeDetectorAPIClient("YOUR_API_KEY_HERE");
 
         try {
-            // Request body
-            Map&lt;String, Object&gt; parameters &#x3D; new HashMap&lt;&gt;();
-        parameters.put(&quot;code&quot;, &quot;a &#x3D; 5
-b &#x3D; 6
-c &#x3D; 7
-
-# calculate the semi-perimeter
-s &#x3D; (a + b + c) / 2
-
-# calculate the area
-area &#x3D; (s*(s-a)*(s-b)*(s-c)) ** 0.5
-print(&#x27;The area of the triangle is %0.2f&#x27; %area)&quot;);
-
-            // Execute the API request
-            APIResponse response = client.execute(parameters);
+            // Execute the API request (no parameters required)
+            APIResponse response = client.execute(null);
 
             // Check if the request was successful
             if (response.isSuccess()) {
