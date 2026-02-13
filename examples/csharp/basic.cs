@@ -20,7 +20,7 @@ namespace APIVerve.Examples
         private static readonly string API_URL = "https://api.apiverve.com/v1/codedetector";
 
         /// <summary>
-        /// Make a POST request to the Code Detector API
+        /// Make a GET request to the Code Detector API
         /// </summary>
         static async Task<JsonDocument> CallCodeDetectorAPI()
         {
@@ -29,22 +29,7 @@ namespace APIVerve.Examples
                 using var client = new HttpClient();
                 client.DefaultRequestHeaders.Add("x-api-key", API_KEY);
 
-                // Request body
-                var requestBody &#x3D; new { code &#x3D; &quot;a &#x3D; 5
-b &#x3D; 6
-c &#x3D; 7
-
-# calculate the semi-perimeter
-s &#x3D; (a + b + c) / 2
-
-# calculate the area
-area &#x3D; (s*(s-a)*(s-b)*(s-c)) ** 0.5
-print(&#x27;The area of the triangle is %0.2f&#x27; %area)&quot; };
-
-                var jsonContent = JsonSerializer.Serialize(requestBody);
-                var content = new StringContent(jsonContent, Encoding.UTF8, "application/json");
-
-                var response = await client.PostAsync(API_URL, content);
+                var response = await client.GetAsync(API_URL);
 
                 // Check if response is successful
                 response.EnsureSuccessStatusCode();
