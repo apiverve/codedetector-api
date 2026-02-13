@@ -9,22 +9,15 @@ const API_KEY = process.env.APIVERVE_API_KEY || 'YOUR_API_KEY_HERE';
 const API_URL = 'https://api.apiverve.com/v1/codedetector';
 
 /**
- * Make a POST request to the Code Detector API
+ * Make a GET request to the Code Detector API
  */
 async function callCodeDetectorAPI() {
   try {
-    // Request body
-    const requestBody &#x3D; {
-    &quot;code&quot;: &quot;a &#x3D; 5\nb &#x3D; 6\nc &#x3D; 7\n\n# calculate the semi-perimeter\ns &#x3D; (a + b + c) / 2\n\n# calculate the area\narea &#x3D; (s*(s-a)*(s-b)*(s-c)) ** 0.5\nprint(&#x27;The area of the triangle is %0.2f&#x27; %area)&quot;
-};
-
     const response = await fetch(API_URL, {
-      method: 'POST',
+      method: 'GET',
       headers: {
-        'x-api-key': API_KEY,
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(requestBody)
+        'x-api-key': API_KEY
+      }
     });
 
     // Check if response is successful
