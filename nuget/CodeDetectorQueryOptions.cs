@@ -12,7 +12,6 @@ namespace APIVerve.API.CodeDetector
     {
         /// <summary>
         /// The code snippet you want to detect the programming language of
-        /// Example: var test = '';
         /// </summary>
         [JsonProperty("code")]
         public string Code { get; set; }
