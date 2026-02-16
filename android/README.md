@@ -26,7 +26,7 @@ Add the dependency:
 
 ```gradle
 dependencies {
-    implementation 'com.github.apiverve:codedetector-api:1.1.13'
+    implementation 'com.github.apiverve:codedetector-api:1.1.14'
 }
 ```
 
@@ -47,7 +47,16 @@ CodeDetectorAPIClient client = new CodeDetectorAPIClient("YOUR_API_KEY");
 try {
     // Prepare request parameters
     Map<String, Object> parameters = new HashMap<>();
-    parameters.put("code", "var test = '';");
+    parameters.put("code", "a = 5
+b = 6
+c = 7
+
+# calculate the semi-perimeter
+s = (a + b + c) / 2
+
+# calculate the area
+area = (s*(s-a)*(s-b)*(s-c)) ** 0.5
+print('The area of the triangle is %0.2f' %area)");
 
     // Execute the request
     APIResponse response = client.execute(parameters);
