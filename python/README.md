@@ -44,7 +44,16 @@ from apiverve_codedetector.apiClient import CodedetectorAPIClient
 # Initialize the client with your APIVerve API key
 api = CodedetectorAPIClient("[YOUR_API_KEY]")
 
-query = { "code": "a = 5\nb = 6\nc = 7\n\n# calculate the semi-perimeter\ns = (a + b + c) / 2\n\n# calculate the area\narea = (s*(s-a)*(s-b)*(s-c)) ** 0.5\nprint('The area of the triangle is %0.2f' %area)" }
+query = { "code": "a = 5
+b = 6
+c = 7
+
+# calculate the semi-perimeter
+s = (a + b + c) / 2
+
+# calculate the area
+area = (s*(s-a)*(s-b)*(s-c)) ** 0.5
+print('The area of the triangle is %0.2f' %area)" }
 
 try:
     # Make the API call
@@ -82,7 +91,16 @@ Using the API client, you can perform requests to the API.
 ###### Define Query
 
 ```python
-query = { "code": "a = 5\nb = 6\nc = 7\n\n# calculate the semi-perimeter\ns = (a + b + c) / 2\n\n# calculate the area\narea = (s*(s-a)*(s-b)*(s-c)) ** 0.5\nprint('The area of the triangle is %0.2f' %area)" }
+query = { "code": "a = 5
+b = 6
+c = 7
+
+# calculate the semi-perimeter
+s = (a + b + c) / 2
+
+# calculate the area
+area = (s*(s-a)*(s-b)*(s-c)) ** 0.5
+print('The area of the triangle is %0.2f' %area)" }
 ```
 
 ###### Simple Request
@@ -124,7 +142,16 @@ from apiverve_codedetector.apiClient import CodedetectorAPIClient, CodedetectorA
 
 api = CodedetectorAPIClient("[YOUR_API_KEY]")
 
-query = { "code": "a = 5\nb = 6\nc = 7\n\n# calculate the semi-perimeter\ns = (a + b + c) / 2\n\n# calculate the area\narea = (s*(s-a)*(s-b)*(s-c)) ** 0.5\nprint('The area of the triangle is %0.2f' %area)" }
+query = { "code": "a = 5
+b = 6
+c = 7
+
+# calculate the semi-perimeter
+s = (a + b + c) / 2
+
+# calculate the area
+area = (s*(s-a)*(s-b)*(s-c)) ** 0.5
+print('The area of the triangle is %0.2f' %area)" }
 
 try:
     result = api.execute(query)
@@ -145,7 +172,16 @@ from apiverve_codedetector.apiClient import CodedetectorAPIClient, CodedetectorA
 
 api = CodedetectorAPIClient("[YOUR_API_KEY]")
 
-query = { "code": "a = 5\nb = 6\nc = 7\n\n# calculate the semi-perimeter\ns = (a + b + c) / 2\n\n# calculate the area\narea = (s*(s-a)*(s-b)*(s-c)) ** 0.5\nprint('The area of the triangle is %0.2f' %area)" }
+query = { "code": "a = 5
+b = 6
+c = 7
+
+# calculate the semi-perimeter
+s = (a + b + c) / 2
+
+# calculate the area
+area = (s*(s-a)*(s-b)*(s-c)) ** 0.5
+print('The area of the triangle is %0.2f' %area)" }
 
 try:
     result = api.execute(query)
@@ -179,7 +215,16 @@ The client supports the context manager protocol for automatic resource cleanup:
 ```python
 from apiverve_codedetector.apiClient import CodedetectorAPIClient, CodedetectorAPIClientError
 
-query = { "code": "a = 5\nb = 6\nc = 7\n\n# calculate the semi-perimeter\ns = (a + b + c) / 2\n\n# calculate the area\narea = (s*(s-a)*(s-b)*(s-c)) ** 0.5\nprint('The area of the triangle is %0.2f' %area)" }
+query = { "code": "a = 5
+b = 6
+c = 7
+
+# calculate the semi-perimeter
+s = (a + b + c) / 2
+
+# calculate the area
+area = (s*(s-a)*(s-b)*(s-c)) ** 0.5
+print('The area of the triangle is %0.2f' %area)" }
 
 # Using context manager ensures proper cleanup
 with CodedetectorAPIClient("[YOUR_API_KEY]") as api:
@@ -205,7 +250,16 @@ from apiverve_codedetector.apiClient import CodedetectorAPIClient
 # Enable debug mode
 api = CodedetectorAPIClient("[YOUR_API_KEY]", debug=True)
 
-query = { "code": "a = 5\nb = 6\nc = 7\n\n# calculate the semi-perimeter\ns = (a + b + c) / 2\n\n# calculate the area\narea = (s*(s-a)*(s-b)*(s-c)) ** 0.5\nprint('The area of the triangle is %0.2f' %area)" }
+query = { "code": "a = 5
+b = 6
+c = 7
+
+# calculate the semi-perimeter
+s = (a + b + c) / 2
+
+# calculate the area
+area = (s*(s-a)*(s-b)*(s-c)) ** 0.5
+print('The area of the triangle is %0.2f' %area)" }
 
 # Debug information will be printed to console
 result = api.execute(query)
@@ -220,8 +274,18 @@ from apiverve_codedetector.apiClient import CodedetectorAPIClient
 
 api = CodedetectorAPIClient("[YOUR_API_KEY]")
 
+query = { "code": "a = 5
+b = 6
+c = 7
+
+# calculate the semi-perimeter
+s = (a + b + c) / 2
+
+# calculate the area
+area = (s*(s-a)*(s-b)*(s-c)) ** 0.5
+print('The area of the triangle is %0.2f' %area)" }
+
 try:
-    query = { "code": "a = 5\nb = 6\nc = 7\n\n# calculate the semi-perimeter\ns = (a + b + c) / 2\n\n# calculate the area\narea = (s*(s-a)*(s-b)*(s-c)) ** 0.5\nprint('The area of the triangle is %0.2f' %area)" }
     result = api.execute(query)
     print(result)
 finally:
