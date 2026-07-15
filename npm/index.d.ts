@@ -4,20 +4,34 @@ declare module '@apiverve/codedetector' {
     secure?: boolean;
   }
 
+  /**
+   * Describes fields the current plan does not unlock. Locked fields arrive as null
+   * in `data`; `locked_fields` names them, using dot paths for nested fields.
+   * Absent when the plan unlocks everything.
+   */
+  export interface PremiumInfo {
+    message: string;
+    upgrade_url: string;
+    locked_fields: string[];
+  }
+
   export interface codedetectorResponse {
     status: string;
     error: string | null;
     data: CodeDetectorData;
     code?: number;
+    premium?: PremiumInfo;
   }
 
 
   interface CodeDetectorData {
-      likelihood: number;
-      family:     string;
-      current:    string;
-      readable:   string;
-      extension:  string;
+      likelihood: number | null;
+      family:     null | string;
+      current:    null | string;
+      readable:   null | string;
+      extension:  null | string;
+      paradigm:   null | string;
+      isCompiled: boolean | null;
   }
 
   export default class codedetectorWrapper {
