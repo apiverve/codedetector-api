@@ -50,6 +50,8 @@ paths:
                   current: python
                   readable: Python Code
                   extension: .py
+                  paradigm: multi-paradigm
+                  isCompiled: false
         '401':
           description: Your request was not authorized, or your API Key was invalid
         '404':
