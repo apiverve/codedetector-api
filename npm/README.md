@@ -126,7 +126,9 @@ async function makeRequest() {
     "family": "PYTHON",
     "current": "python",
     "readable": "Python Code",
-    "extension": ".py"
+    "extension": ".py",
+    "paradigm": "multi-paradigm",
+    "isCompiled": false
   }
 }
 ```
