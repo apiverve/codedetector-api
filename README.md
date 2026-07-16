@@ -197,11 +197,34 @@ x-api-key: YOUR_API_KEY_HERE
 Get your API key: [https://apiverve.com](https://apiverve.com)
 
 ### Response Format
-All responses are JSON with this structure:
+
+Every APIVerve endpoint returns the same envelope — check `status`, then read `data`:
+
 ```json
 {
   "status": "ok",
+  "error": null,
   "data": { ... }
+}
+```
+
+### Example Response
+
+A real response from the Code Detector API:
+
+```json
+{
+  "status": "ok",
+  "error": null,
+  "data": {
+    "likelihood": 0.99,
+    "family": "PYTHON",
+    "current": "python",
+    "readable": "Python Code",
+    "extension": ".py",
+    "paradigm": "multi-paradigm",
+    "isCompiled": false
+  }
 }
 ```
 
