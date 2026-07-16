@@ -25,12 +25,15 @@ namespace APIVerve.API.CodeDetector
 
         [JsonProperty("data")]
         public Data Data { get; set; }
+
+        [JsonProperty("premium")]
+        public Premium Premium { get; set; }
     }
 
     public partial class Data
     {
         [JsonProperty("likelihood")]
-        public double Likelihood { get; set; }
+        public double? Likelihood { get; set; }
 
         [JsonProperty("family")]
         public string Family { get; set; }
@@ -43,5 +46,23 @@ namespace APIVerve.API.CodeDetector
 
         [JsonProperty("extension")]
         public string Extension { get; set; }
+
+        [JsonProperty("paradigm")]
+        public string Paradigm { get; set; }
+
+        [JsonProperty("isCompiled")]
+        public bool? IsCompiled { get; set; }
+    }
+
+    public partial class Premium
+    {
+        [JsonProperty("message")]
+        public string Message { get; set; }
+
+        [JsonProperty("upgrade_url")]
+        public Uri UpgradeUrl { get; set; }
+
+        [JsonProperty("locked_fields")]
+        public string[] LockedFields { get; set; }
     }
 }
