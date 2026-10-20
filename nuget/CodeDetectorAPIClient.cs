@@ -67,7 +67,7 @@ namespace APIVerve.API.CodeDetector
         /// <summary>Validation rules for parameters</summary>
         private static readonly Dictionary<string, ValidationRule> _validationRules = new Dictionary<string, ValidationRule>
         {
-            { "code", new ValidationRule { Type = "string", Required = true } }
+            { "code", new ValidationRule { Type = "string", Required = true, MaxLength = 50000 } }
         };
 
         /// <summary>Format validation patterns</summary>
