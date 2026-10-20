@@ -1,13 +1,13 @@
-# [Code Detector API](https://apiverve.com/marketplace/codedetector?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+# [Code Detector API](https://apiverve.com/marketplace/codedetector?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 
-Code Detector is a simple tool for detecting the language of code in text. It returns details such as extension, language, family, and more.
+Code Detector identifies the programming language of any submitted code snippet. It returns the canonical language name, readable title, and standard file extension for the detected code.
 
 The Code Detector API provides a simple, reliable way to integrate code detector functionality into your applications. Built for developers who need production-ready code detector capabilities without the complexity of building from scratch.
 
-**[View API Details →](https://apiverve.com/marketplace/codedetector?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)**
+**[View API Details →](https://apiverve.com/marketplace/codedetector?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://apiverve.com/marketplace/codedetector?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://apiverve.com/marketplace/codedetector?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 [![Method](https://img.shields.io/badge/Method-POST-blue.svg)](#)
 [![Platform](https://img.shields.io/badge/Platform-Multi--Platform-orange.svg)](#installation)
 
@@ -167,7 +167,7 @@ go get github.com/apiverve/codedetector-api/go
 
 ## Documentation
 
-- 🏠 **API Home:** [Code Detector API](https://apiverve.com/marketplace/codedetector?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+- 🏠 **API Home:** [Code Detector API](https://apiverve.com/marketplace/codedetector?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 - 📚 **API Reference:** [docs.apiverve.com/ref/codedetector](https://docs.apiverve.com/ref/codedetector)
 - 📖 **OpenAPI Spec:** [openapi.yaml](./openapi.yaml)
 - 💡 **Examples:** [examples/](./examples/)
@@ -232,7 +232,7 @@ A real response from the Code Detector API:
 
 ## Support & Community
 
-- 🏠 **API Home**: [Code Detector API](https://apiverve.com/marketplace/codedetector?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+- 🏠 **API Home**: [Code Detector API](https://apiverve.com/marketplace/codedetector?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 - 💬 **Support**: [https://apiverve.com/contact](https://apiverve.com/contact)
 - 🐛 **Issues**: [GitHub Issues](../../issues)
 - 📖 **Documentation**: [https://docs.apiverve.com](https://docs.apiverve.com)
