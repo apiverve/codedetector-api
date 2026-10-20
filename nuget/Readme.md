@@ -60,8 +60,8 @@ class Program
         var apiClient = new CodeDetectorAPIClient("[YOUR_API_KEY]");
 
         var queryOptions = new CodeDetectorQueryOptions {
-    Code = "a = 5\nb = 6\nc = 7\n\n# calculate the semi-perimeter\ns = (a + b + c) / 2\n\n# calculate the area\narea = (s*(s-a)*(s-b)*(s-c)) ** 0.5\nprint('The area of the triangle is %0.2f' %area)"
-};
+            Code = "a = 5\nb = 6\nc = 7\n\n# calculate the semi-perimeter\ns = (a + b + c) / 2\n\n# calculate the area\narea = (s*(s-a)*(s-b)*(s-c)) ** 0.5\nprint('The area of the triangle is %0.2f' %area)"
+        };
 
         // Make the API call
         try
@@ -124,8 +124,8 @@ public class Example
         var apiClient = new CodeDetectorAPIClient("[YOUR_API_KEY]");
 
         var queryOptions = new CodeDetectorQueryOptions {
-    Code = "a = 5\nb = 6\nc = 7\n\n# calculate the semi-perimeter\ns = (a + b + c) / 2\n\n# calculate the area\narea = (s*(s-a)*(s-b)*(s-c)) ** 0.5\nprint('The area of the triangle is %0.2f' %area)"
-};
+            Code = "a = 5\nb = 6\nc = 7\n\n# calculate the semi-perimeter\ns = (a + b + c) / 2\n\n# calculate the area\narea = (s*(s-a)*(s-b)*(s-c)) ** 0.5\nprint('The area of the triangle is %0.2f' %area)"
+        };
 
         var response = await apiClient.ExecuteAsync(queryOptions);
 
@@ -156,8 +156,8 @@ public class Example
         var apiClient = new CodeDetectorAPIClient("[YOUR_API_KEY]");
 
         var queryOptions = new CodeDetectorQueryOptions {
-    Code = "a = 5\nb = 6\nc = 7\n\n# calculate the semi-perimeter\ns = (a + b + c) / 2\n\n# calculate the area\narea = (s*(s-a)*(s-b)*(s-c)) ** 0.5\nprint('The area of the triangle is %0.2f' %area)"
-};
+            Code = "a = 5\nb = 6\nc = 7\n\n# calculate the semi-perimeter\ns = (a + b + c) / 2\n\n# calculate the area\narea = (s*(s-a)*(s-b)*(s-c)) ** 0.5\nprint('The area of the triangle is %0.2f' %area)"
+        };
 
         var response = apiClient.Execute(queryOptions);
 
@@ -193,8 +193,8 @@ public class Example
         var apiClient = new CodeDetectorAPIClient("[YOUR_API_KEY]");
 
         var queryOptions = new CodeDetectorQueryOptions {
-    Code = "a = 5\nb = 6\nc = 7\n\n# calculate the semi-perimeter\ns = (a + b + c) / 2\n\n# calculate the area\narea = (s*(s-a)*(s-b)*(s-c)) ** 0.5\nprint('The area of the triangle is %0.2f' %area)"
-};
+            Code = "a = 5\nb = 6\nc = 7\n\n# calculate the semi-perimeter\ns = (a + b + c) / 2\n\n# calculate the area\narea = (s*(s-a)*(s-b)*(s-c)) ** 0.5\nprint('The area of the triangle is %0.2f' %area)"
+        };
 
         try
         {
@@ -249,8 +249,8 @@ public class Example
         apiClient.SetRetryDelay(2000);     // Wait 2 seconds between retries
 
         var queryOptions = new CodeDetectorQueryOptions {
-    Code = "a = 5\nb = 6\nc = 7\n\n# calculate the semi-perimeter\ns = (a + b + c) / 2\n\n# calculate the area\narea = (s*(s-a)*(s-b)*(s-c)) ** 0.5\nprint('The area of the triangle is %0.2f' %area)"
-};
+            Code = "a = 5\nb = 6\nc = 7\n\n# calculate the semi-perimeter\ns = (a + b + c) / 2\n\n# calculate the area\narea = (s*(s-a)*(s-b)*(s-c)) ** 0.5\nprint('The area of the triangle is %0.2f' %area)"
+        };
 
         try
         {
