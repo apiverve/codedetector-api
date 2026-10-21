@@ -1,6 +1,6 @@
 # Code Detector API - PHP Package
 
-Code Detector is a simple tool for detecting the language of code in text. It returns details such as extension, language, family, and more.
+Code Detector identifies the programming language of any submitted code snippet. It returns the canonical language name, readable title, and standard file extension for the detected code.
 
 ## Installation
 
@@ -105,11 +105,11 @@ $client = new Client(
 
 ## Documentation
 
-For more information, visit the [API Documentation](https://docs.apiverve.com/ref/codedetector?utm_source=packagist&utm_medium=readme).
+For more information, visit the [API Documentation](https://docs.apiverve.com/ref/codedetector?utm_source=packagist&utm_medium=referral&utm_content=readme).
 
 ## Support
 
-- Website: [https://apiverve.com/marketplace/codedetector?utm_source=php&utm_medium=readme](https://apiverve.com/marketplace/codedetector?utm_source=php&utm_medium=readme)
+- Website: [https://apiverve.com/marketplace/codedetector?utm_source=php&utm_medium=referral&utm_content=readme](https://apiverve.com/marketplace/codedetector?utm_source=php&utm_medium=referral&utm_content=readme)
 - Email: hello@apiverve.com
 
 ## License

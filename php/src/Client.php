@@ -28,7 +28,7 @@ print(\'The area of the triangle is %0.2f\' %area)']);
  * print_r($response);
  * ```
  *
- * @see https://apiverve.com/marketplace/codedetector?utm_source=php&utm_medium=readme
+ * @see https://apiverve.com/marketplace/codedetector?utm_source=php&utm_medium=referral&utm_content=readme
  */
 class Client
 {
@@ -43,7 +43,7 @@ class Client
      * Validation rules for parameters
      */
     private const VALIDATION_RULES = [
-        'code' => ['type' => 'string', 'required' => true]
+        'code' => ['type' => 'string', 'required' => true, 'maxLength' => 50000]
     ];
 
     /**
