@@ -1,7 +1,7 @@
 {
     "name": "apiverve/codedetector",
-    "description": "Code Detector is a simple tool for detecting the language of code in text. It returns details such as extension, language, family, and more.",
-    "version": "1.2.0",
+    "description": "Code Detector identifies the programming language of any submitted code snippet. It returns the canonical language name, readable title, and standard file extension for the detected code.",
+    "version": "1.2.2",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -15,13 +15,13 @@
         "api",
         "apiverve",
         "codedetector",
-        "code detector",
-        "code detection",
-        "code detect",
-        "code api",
-        "code tool"
+        "code detector api",
+        "detect programming language",
+        "code language detector",
+        "identify code snippet language",
+        "detect language of code"
     ],
-    "homepage": "https://apiverve.com/marketplace/codedetector?utm_source=php&utm_medium=homepage",
+    "homepage": "https://apiverve.com/marketplace/codedetector?utm_source=php&utm_medium=referral&utm_content=homepage",
     "support": {
         "email": "hello@apiverve.com",
         "docs": "https://docs.apiverve.com/ref/codedetector",
