@@ -46,10 +46,10 @@ final _formatPatterns = {
 
 /// Code Detector API client.
 ///
-/// For more information, visit: https://apiverve.com/marketplace/codedetector?utm_source=dart&utm_medium=readme
+/// For more information, visit: https://apiverve.com/marketplace/codedetector?utm_source=dart&utm_medium=referral&utm_content=readme
 ///
 /// Parameters:
-/// * [code] (required) - The code snippet you want to detect the programming language of
+/// * [code] (required) - The code snippet you want to detect the programming language of [maxLength: 50000]
 class CodedetectorClient {
   final String apiKey;
   final String baseUrl;
@@ -57,7 +57,7 @@ class CodedetectorClient {
 
   /// Validation rules for parameters.
   static final Map<String, ValidationRule> _validationRules = <String, ValidationRule>{
-    'code': ValidationRule(type: 'string', required: true),
+    'code': ValidationRule(type: 'string', required: true, maxLength: 50000),
   };
 
   CodedetectorClient(this.apiKey, {

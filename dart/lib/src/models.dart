@@ -6,33 +6,63 @@ class CodedetectorResponse {
   final dynamic error;
   final CodedetectorData? data;
 
+  /// Set only when the current plan locks one or more fields; null otherwise.
+  final PremiumInfo? premium;
+
   CodedetectorResponse({
     required this.status,
     this.error,
     this.data,
+    this.premium,
   });
 
   factory CodedetectorResponse.fromJson(Map<String, dynamic> json) => CodedetectorResponse(
     status: json['status'] as String? ?? '',
     error: json['error'],
     data: json['data'] != null ? CodedetectorData.fromJson(json['data']) : null,
+    premium: json['premium'] != null ? PremiumInfo.fromJson(json['premium']) : null,
   );
 
   Map<String, dynamic> toJson() => {
     'status': status,
     if (error != null) 'error': error,
     if (data != null) 'data': data,
+    if (premium != null) 'premium': premium!.toJson(),
+  };
+}
+
+/// Describes fields the current plan does not unlock. Locked fields arrive as null
+/// in [data], and [lockedFields] names them (nested ones use dot paths).
+class PremiumInfo {
+  final String? message;
+  final String? upgradeUrl;
+  final List<String>? lockedFields;
+
+  PremiumInfo({this.message, this.upgradeUrl, this.lockedFields});
+
+  factory PremiumInfo.fromJson(Map<String, dynamic> json) => PremiumInfo(
+    message: json['message'] as String?,
+    upgradeUrl: json['upgrade_url'] as String?,
+    lockedFields: (json['locked_fields'] as List?)?.map((e) => e.toString()).toList(),
+  );
+
+  Map<String, dynamic> toJson() => {
+    if (message != null) 'message': message,
+    if (upgradeUrl != null) 'upgrade_url': upgradeUrl,
+    if (lockedFields != null) 'locked_fields': lockedFields,
   };
 }
 
 /// Response data for the Code Detector API.
 
 class CodedetectorData {
-  double? likelihood;
+  num? likelihood;
   String? family;
   String? current;
   String? readable;
   String? extension;
+  String? paradigm;
+  bool? isCompiled;
 
   CodedetectorData({
     this.likelihood,
@@ -40,6 +70,8 @@ class CodedetectorData {
     this.current,
     this.readable,
     this.extension,
+    this.paradigm,
+    this.isCompiled,
   });
 
   factory CodedetectorData.fromJson(Map<String, dynamic> json) => CodedetectorData(
@@ -48,6 +80,8 @@ class CodedetectorData {
       current: json['current'],
       readable: json['readable'],
       extension: json['extension'],
+      paradigm: json['paradigm'],
+      isCompiled: json['isCompiled'],
     );
 }
 

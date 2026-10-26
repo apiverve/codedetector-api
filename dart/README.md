@@ -1,11 +1,11 @@
 # Code Detector API - Dart/Flutter Client
 
-Code Detector is a simple tool for detecting the language of code in text. It returns details such as extension, language, family, and more.
+Code Detector identifies the programming language of any submitted code snippet. It returns the canonical language name, readable title, and standard file extension for the detected code.
 
 [![pub package](https://img.shields.io/pub/v/apiverve_codedetector.svg)](https://pub.dev/packages/apiverve_codedetector)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-This is the Dart/Flutter client for the [Code Detector API](https://apiverve.com/marketplace/codedetector?utm_source=dart&utm_medium=readme).
+This is the Dart/Flutter client for the [Code Detector API](https://apiverve.com/marketplace/codedetector?utm_source=dart&utm_medium=referral&utm_content=readme).
 
 ## Installation
 
@@ -13,7 +13,7 @@ Add this to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  apiverve_codedetector: ^1.1.14
+  apiverve_codedetector: ^1.2.3
 ```
 
 Then run:
@@ -65,19 +65,21 @@ print(\'The area of the triangle is %0.2f\' %area)'
     "family": "PYTHON",
     "current": "python",
     "readable": "Python Code",
-    "extension": ".py"
+    "extension": ".py",
+    "paradigm": "multi-paradigm",
+    "isCompiled": false
   }
 }
 ```
 
 ## API Reference
 
-- **API Home:** [Code Detector API](https://apiverve.com/marketplace/codedetector?utm_source=dart&utm_medium=readme)
-- **Documentation:** [docs.apiverve.com/ref/codedetector](https://docs.apiverve.com/ref/codedetector?utm_source=dart&utm_medium=readme)
+- **API Home:** [Code Detector API](https://apiverve.com/marketplace/codedetector?utm_source=dart&utm_medium=referral&utm_content=readme)
+- **Documentation:** [docs.apiverve.com/ref/codedetector](https://docs.apiverve.com/ref/codedetector?utm_source=dart&utm_medium=referral&utm_content=readme)
 
 ## Authentication
 
-All requests require an API key. Get yours at [apiverve.com](https://apiverve.com?utm_source=dart&utm_medium=readme).
+All requests require an API key. Get yours at [apiverve.com](https://apiverve.com?utm_source=dart&utm_medium=referral&utm_content=readme).
 
 ## License
 
@@ -85,4 +87,4 @@ MIT License - see [LICENSE](LICENSE) for details.
 
 ---
 
-Built with Dart for [APIVerve](https://apiverve.com?utm_source=dart&utm_medium=readme)
+Built with Dart for [APIVerve](https://apiverve.com?utm_source=dart&utm_medium=referral&utm_content=readme)
